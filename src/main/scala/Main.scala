@@ -1,9 +1,14 @@
-@main def hello: Unit = 
+@main
+def hello =
   println("Hello world!")
-  println(Array(1) == Array(1))
 
-def msg = "I was compiled by Scala 3. :)"
+  val list = List(1)
+  list.map(x => x + 2)
 
-val haha = 1
+  val x = 1
+  s"$x is great"
 
-var foo = 3
+  if x > 4 then println("huhu")
+end hello
+
+def kill = ???
