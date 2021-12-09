@@ -8,3 +8,17 @@ extension (int: Int)
 5 times { i =>
   println(s"Hello $i")
 }
+
+def add(x: Int, y: Int) = x + y
+
+val sub = (x: Int, y: Int) => x - y
+
+val increment = add(1, _: Int)
+val decrement = sub(_: Int, 1)
+
+increment(30)
+decrement(30)
+
+def intuition = add(1, _: Int)
+
+intuition(30)
