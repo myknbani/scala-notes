@@ -13,12 +13,12 @@ def add(x: Int, y: Int) = x + y
 
 val sub = (x: Int, y: Int) => x - y
 
-val increment = add(1, _: Int)
-val decrement = sub(_: Int, 1)
+val increment = add(1, _)
+val decrement = sub(_, 1)
 
 increment(30)
 decrement(30)
 
-def intuition = add(1, _: Int)
+def intuition = add(1, _)
 
 intuition(30)
